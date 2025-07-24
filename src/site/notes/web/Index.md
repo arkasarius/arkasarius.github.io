@@ -2,7 +2,6 @@
 {"dg-publish":true,"permalink":"/web/index/","title":"El regreso de Asphyr","tags":["gardenEntry"]}
 ---
 
-![imagen](/img/user/West%20March-%20El%20regreso%20de%20Asphyr/archivos/cabecera.jpg)
 Hace cien años, durante el caos de la **Plaga de los Hechizos**, cuando la magia misma se desmoronaba en **Faerûn**, un dios olvidado por la mayoría, cuya devoción estaba ligada a una tierra oculta al oeste de **Leilon**, tomó una decisión desesperada. Para proteger a su gente, su tierra sagrada y los secretos que dormían bajo ella, arrancó del mar entero un fragmento del mundo y lo lanzó a otro plano de existencia.
 Durante un siglo, la isla desaparecida vivió fuera del tiempo. Mientras el mundo ardía, se reconstruía y olvidaba, en aquel plano extraño la vida se sostenía apenas, conservada en una burbuja donde el tiempo fluía lentamente y la magia era escasa, pero no corrupta.  
 Hoy, la isla ha regresado.  
@@ -23,7 +22,7 @@ No hay ciudades cercanas. Solo la ley escrita por pioneros y la voluntad de los 
 [[web/Como participar\|Como participar]]
 [[web/Enlaces\|Enlaces]]
 [[web/Lore introducción\|Lore introducción]]
-[[web/Resumen de sesiones/Resumen de sesiones\|Resumen de sesiones]]
+[[web/Resumen de sesiones\|Resumen de sesiones]]
   
 ---
 
