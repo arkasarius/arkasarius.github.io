@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/web/lore-introduccion/","title":"Título de la Página"}
+{"dg-publish":true,"permalink":"/web/lore-introduccion/","title":"Lore introducción"}
 ---
 
 Las velas crujen. El mástil principal gime como un anciano bajo el peso del viento.
