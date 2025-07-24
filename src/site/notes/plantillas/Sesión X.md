@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/plantillas/sesion-x/","title":"Título de la Página"}
+{"dg-publish":true,"permalink":"/plantillas/sesion-x/","title":"Sesión X"}
 ---
 
 # Sesión X - Nombre 
