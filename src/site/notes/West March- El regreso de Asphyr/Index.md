@@ -2,6 +2,7 @@
 {"dg-publish":true,"permalink":"/west-march-el-regreso-de-asphyr/index/","title":"El regreso de Asphyr","tags":["gardenEntry"]}
 ---
 
+![](/img/user/West March- El regreso de Asphyr/archivos/cabecera.jpg)
 Hace cien años, durante el caos de la **Plaga de los Hechizos**, cuando la magia misma se desmoronaba en **Faerûn**, un dios olvidado por la mayoría, cuya devoción estaba ligada a una tierra oculta al oeste de **Leilon**, tomó una decisión desesperada. Para proteger a su gente, su tierra sagrada y los secretos que dormían bajo ella, arrancó del mar entero un fragmento del mundo y lo lanzó a otro plano de existencia.
 Durante un siglo, la isla desaparecida vivió fuera del tiempo. Mientras el mundo ardía, se reconstruía y olvidaba, en aquel plano extraño la vida se sostenía apenas, conservada en una burbuja donde el tiempo fluía lentamente y la magia era escasa, pero no corrupta.  
 Hoy, la isla ha regresado.  
@@ -14,8 +15,6 @@ Criaturas y civilizaciones que nadie recuerda caminan por sus costas y las decis
   
 Tú, como aventurero solitario, llegas en el primer barco de aventureros a **Mahuela**.  
 No hay ciudades cercanas. Solo la ley escrita por pioneros y la voluntad de los que se atreven a caminar más allá del mapa.  
-
-test
   
 ---
   
