@@ -15,6 +15,7 @@ Criaturas y civilizaciones que nadie recuerda caminan por sus costas y las decis
   
 Tú, como aventurero solitario, llegas en el primer barco de aventureros a **Mahuela**.  
 No hay ciudades cercanas. Solo la ley escrita por pioneros y la voluntad de los que se atreven a caminar más allá del mapa.  
+
   
 ---
   
