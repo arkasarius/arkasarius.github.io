@@ -20,7 +20,7 @@ test
 ---
   
 [[West March- El regreso de Asphyr/Sistema y preguntas frecuentes\|Sistema y preguntas frecuentes]]
-[[West March- El regreso de Asphyr/¿Cómo puedo participar\|¿Cómo puedo participar]]
+[[West March- El regreso de Asphyr/Como participar\|Como participar]]
 [[West March- El regreso de Asphyr/Enlaces\|Enlaces]]
 [[West March- El regreso de Asphyr/Lore introducción\|Lore introducción]]
 [[West March- El regreso de Asphyr/Resumen de sesiones/Resumen de sesiones\|Resumen de sesiones]]
