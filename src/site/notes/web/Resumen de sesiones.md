@@ -24,3 +24,6 @@
 [[web/sesiones/Sesión 20\|Sesión 20]]
 [[web/sesiones/Sesión 21\|Sesión 21]]
 [[web/sesiones/Sesión 22\|Sesión 22]]
+[[web/sesiones/Sesión 23\|Sesión 23]]
+[[web/sesiones/Sesión 24\|Sesión 24]]
+
