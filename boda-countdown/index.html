@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#090712" />
+    <meta
+      name="description"
+      content="Cuenta atrás hasta el 14 de octubre de 2026. Disfrutad de la luna de miel y volved cuando llegue a cero."
+    />
+    <title>Volved cuando llegue a cero</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        font-family:
+          Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+          "Segoe UI", sans-serif;
+        background: #090712;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        width: 100%;
+        min-height: 100%;
+        margin: 0;
+      }
+
+      body {
+        min-height: 100svh;
+        overflow: hidden;
+        color: #fff;
+      }
+
+      .video-shell,
+      .shade {
+        position: fixed;
+        inset: 0;
+      }
+
+      .video-shell {
+        z-index: -2;
+        overflow: hidden;
+        background:
+          radial-gradient(circle at 50% 45%, #3d244e 0%, #141021 55%, #090712 100%);
+      }
+
+      .video-shell iframe {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: max(100vw, 177.78vh);
+        height: max(100vh, 56.25vw);
+        border: 0;
+        transform: translate(-50%, -50%) scale(1.02);
+        pointer-events: none;
+      }
+
+      .shade {
+        z-index: -1;
+        background:
+          linear-gradient(180deg, rgb(4 3 10 / 38%), rgb(4 3 10 / 62%)),
+          radial-gradient(circle at center, transparent 0 20%, rgb(3 2 8 / 34%) 75%);
+      }
+
+      main {
+        display: grid;
+        min-height: 100svh;
+        place-items: center;
+        padding: clamp(1rem, 4vw, 3rem);
+      }
+
+      .card {
+        width: min(48rem, 100%);
+        padding: clamp(1.5rem, 5vw, 3.2rem);
+        border: 1px solid rgb(255 255 255 / 34%);
+        border-radius: 2rem;
+        background: linear-gradient(145deg, rgb(255 255 255 / 20%), rgb(255 255 255 / 7%));
+        box-shadow:
+          0 1.5rem 5rem rgb(0 0 0 / 45%),
+          inset 0 1px 0 rgb(255 255 255 / 35%);
+        text-align: center;
+        -webkit-backdrop-filter: blur(22px) saturate(135%);
+        backdrop-filter: blur(22px) saturate(135%);
+      }
+
+      .eyebrow {
+        margin: 0 0 0.8rem;
+        color: rgb(255 255 255 / 78%);
+        font-size: clamp(0.82rem, 2vw, 0.95rem);
+        font-weight: 650;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        margin: 0;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: clamp(2rem, 6vw, 4rem);
+        font-weight: 500;
+        line-height: 1.03;
+        text-wrap: balance;
+      }
+
+      .countdown {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: clamp(0.45rem, 1.6vw, 0.9rem);
+        margin: clamp(1.6rem, 5vw, 2.8rem) 0;
+      }
+
+      .unit {
+        min-width: 0;
+        padding: clamp(0.7rem, 2.4vw, 1.15rem) 0.25rem;
+        border: 1px solid rgb(255 255 255 / 18%);
+        border-radius: 1rem;
+        background: rgb(7 5 17 / 30%);
+      }
+
+      .number {
+        display: block;
+        font-variant-numeric: tabular-nums;
+        font-size: clamp(1.65rem, 6vw, 3.35rem);
+        font-weight: 720;
+        line-height: 1;
+      }
+
+      .label {
+        display: block;
+        margin-top: 0.55rem;
+        color: rgb(255 255 255 / 68%);
+        font-size: clamp(0.7rem, 2vw, 0.85rem);
+        letter-spacing: 0.09em;
+        text-transform: uppercase;
+      }
+
+      .message {
+        margin: 0;
+        font-size: clamp(1.02rem, 2.6vw, 1.3rem);
+        line-height: 1.65;
+        text-wrap: balance;
+      }
+
+      .aside {
+        margin: 1rem 0 0;
+        color: rgb(255 255 255 / 58%);
+        font-size: 0.82rem;
+      }
+
+      .sound {
+        position: fixed;
+        right: 1rem;
+        bottom: 1rem;
+        padding: 0.72rem 1rem;
+        border: 1px solid rgb(255 255 255 / 28%);
+        border-radius: 999px;
+        background: rgb(8 6 18 / 54%);
+        color: #fff;
+        font: inherit;
+        font-size: 0.88rem;
+        cursor: pointer;
+        -webkit-backdrop-filter: blur(14px);
+        backdrop-filter: blur(14px);
+      }
+
+      .sound:hover,
+      .sound:focus-visible {
+        background: rgb(255 255 255 / 18%);
+        outline: 2px solid transparent;
+      }
+
+      @media (max-width: 34rem) {
+        .card {
+          border-radius: 1.5rem;
+        }
+
+        .countdown {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .sound {
+          right: 50%;
+          transform: translateX(50%);
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .video-shell iframe {
+          visibility: hidden;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="video-shell" aria-hidden="true">
+      <iframe
+        id="rickroll"
+        title=""
+        tabindex="-1"
+        allow="autoplay; encrypted-media; picture-in-picture"
+        referrerpolicy="strict-origin-when-cross-origin"
+        src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ?autoplay=1&amp;mute=1&amp;controls=0&amp;loop=1&amp;playlist=dQw4w9WgXcQ&amp;playsinline=1&amp;modestbranding=1&amp;rel=0"
+      ></iframe>
+    </div>
+    <div class="shade" aria-hidden="true"></div>
+
+    <main>
+      <section class="card" aria-labelledby="title">
+        <p class="eyebrow">Cuenta atrás</p>
+        <h1 id="title">Volved cuando llegue a cero</h1>
+
+        <div class="countdown" role="timer" aria-live="off" aria-label="Tiempo restante">
+          <div class="unit"><span class="number" id="days">00</span><span class="label">Días</span></div>
+          <div class="unit"><span class="number" id="hours">00</span><span class="label">Horas</span></div>
+          <div class="unit"><span class="number" id="minutes">00</span><span class="label">Minutos</span></div>
+          <div class="unit"><span class="number" id="seconds">00</span><span class="label">Segundos</span></div>
+        </div>
+
+        <p class="message" id="message">
+          Disfrutad de la luna de miel.<br />Cuando esto llegue a cero, volved aquí.
+        </p>
+        <p class="aside">No, romper más yeso no ayudará.</p>
+      </section>
+    </main>
+
+    <button class="sound" id="sound" type="button">Activar sonido</button>
+
+    <script>
+      (() => {
+        const target = new Date("2026-10-14T00:00:00+02:00").getTime();
+        const fields = {
+          days: document.querySelector("#days"),
+          hours: document.querySelector("#hours"),
+          minutes: document.querySelector("#minutes"),
+          seconds: document.querySelector("#seconds"),
+        };
+        const message = document.querySelector("#message");
+        let timer;
+
+        const pad = (value) => String(value).padStart(2, "0");
+
+        function updateCountdown() {
+          const remaining = Math.max(0, target - Date.now());
+          const totalSeconds = Math.floor(remaining / 1000);
+
+          fields.days.textContent = pad(Math.floor(totalSeconds / 86400));
+          fields.hours.textContent = pad(Math.floor((totalSeconds % 86400) / 3600));
+          fields.minutes.textContent = pad(Math.floor((totalSeconds % 3600) / 60));
+          fields.seconds.textContent = pad(totalSeconds % 60);
+
+          if (remaining === 0) {
+            message.innerHTML = "Ya ha llegado el momento.<br><strong>Bienvenidos de vuelta.</strong>";
+            clearInterval(timer);
+          }
+        }
+
+        updateCountdown();
+        timer = setInterval(updateCountdown, 1000);
+
+        document.querySelector("#sound").addEventListener("click", (event) => {
+          const video = document.querySelector("#rickroll");
+          video.src = video.src.replace("mute=1", "mute=0");
+          event.currentTarget.textContent = "Sonido activado";
+          event.currentTarget.disabled = true;
+        });
+      })();
+    </script>
+  </body>
+</html>
+
